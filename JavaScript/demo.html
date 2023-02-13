@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is a demo page</h1>
+    <!-- <button onclick="btnClick()">Click Me</button> -->
+    <div style="height: 500px; border: 2px solid black" id="myDiv">
+        <button>Click Me</button>
+    </div>
+    <script>
+        // function btnClick() {
+        //     let el = document.getElementsByTagName('h1')[0];
+        //     el.innerText = 'This is Cipher Schools';
+        // }
+
+        // var btn = document.querySelector('button');
+        // btn.addEventListener("click", function (e) {
+        //     document.getElementsByTagName("h1")[0].innerText = "This is Cipher Schools";
+        // })
+
+        document.querySelector("#myDiv").addEventListener("click", function () {
+            console.log("Div was clicked");
+        })
+
+        document.querySelector("button").addEventListener("click", function (e) {
+            console.log("Button was clicked");
+            document.getElementsByTagName("h1")[0].innerText = "This is Cipher Schools";
+        })
+
+        document.body.addEventListener("click", function () {
+            console.log("Body was clicked");
+        })
+    </script>
+</body>
+
+</html>
